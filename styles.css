@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Layout styles */
+
+.center-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-box-l {
+  padding: 2.33rem;
+}
+
+.switcher-l > * {
+  --gutter: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: calc(var(--gutter) / -2);
+}
+
+.switcher-l > * > * {
+  flex-grow: 1;
+  flex-basis: calc((45rem - 100%) * 999);
+  margin: calc(var(--gutter) / 2);
+}
+
+header {
+  max-width: 58ch;
+  color: hsl(234, 12%, 34%);
+}
+
+.primary {
+  font-size: calc(1rem + 1vw);
+  font-weight: 200;
+}
+
+.secondary {
+  font-size: calc(1rem + 1vw);
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.95rem;
+}
+
+.stack-l > * + * {
+  margin-top: var(--gutter);
+}
+
+.card-stack > :nth-last-child(2) {
+  margin-top: 0.8rem;
+}
+.card-stack > :nth-last-child(1) {
+  margin-top: 1.75rem;
+}
+
+.card {
+  max-width: 22rem;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 2px 5px 15px -5px hsl(229, 6%, 66%);
+  color: hsl(234, 12%, 34%);
+}
+
+.card h4 {
+  font-weight: 600;
+}
+
+.card p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 25px;
+}
+
+.card:before {
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.img-box {
+  text-align: right;
+  width: 100%;
+  padding: 0;
+}
+
+.supervisor.card:before {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.team-builder.card:before {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.karma.card:before {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.calculator.card:before {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.max-width-u {
+  max-width: 22rem;
+}
+
+.mar-top-u {
+  margin-top: 4rem;
+}
